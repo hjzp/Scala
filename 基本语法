@@ -1,7 +1,35 @@
 # 语法
 
+## 面向过程：
+
 Function:
 `val add = (x: Int, y: Int) => x + y`
 
 Methods:
 `def add(x: Int, y: Int): Int = x + y`
+
+Scala中不使用return，最后一个表达式即为返回值
+
+## 面向对象：
+
+`class Greeter(prefix: String, suffix: String) {
+  def greet(name: String): Unit =
+    println(prefix + name + suffix)
+}`
+
+Unit就相当于void
+
+Case Classes？？
+
+
+object：
+
+object IdFactory {
+  private var counter = 0
+  def create(): Int = {
+    counter += 1
+    counter
+  }
+}
+
+val newId: Int = IdFactory.create()
