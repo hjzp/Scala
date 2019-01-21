@@ -1,0 +1,7 @@
+# 语法
+
+Function:
+`val add = (x: Int, y: Int) => x + y`
+
+Methods:
+`def add(x: Int, y: Int): Int = x + y`
